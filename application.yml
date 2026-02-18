@@ -1,0 +1,15 @@
+global:
+  message: Welcome to Microservices Environment!!
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, refresh, metrics
+  endpoint:
+    health:
+      show-details: always
